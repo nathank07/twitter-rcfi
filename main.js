@@ -4,7 +4,6 @@ window.addEventListener("mouseover", (e) => hoveredDiv = e.target)
 
 window.oncontextmenu = function (e) {
     const tweet = seekParentTweet(hoveredDiv)
-    console.log(tweet)
     if(tweet && findInteractions(tweet)){
         const interactions = findInteractions(tweet)
         interactions.forEach(interaction => {
@@ -21,9 +20,6 @@ window.oncontextmenu = function (e) {
                 if(label.includes("Reply")){
                     location.href = location.href + "/quotes"
                 }
-                
-                console.log(interaction)
-                console.log(label)
             }
         });
     }
