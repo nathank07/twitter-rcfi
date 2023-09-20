@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter RCFI",
+    "version": "1.0",
+  
+    "description": "Extension that allows you to right click interactions to see who interacted.\nRight click like button to view likes\nRight click retweet button to view retweets\nRight click reply button to view quote retweets",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.twitter.com/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
