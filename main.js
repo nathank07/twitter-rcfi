@@ -41,7 +41,7 @@ function findInteractions(tweet){
     if(tweet.querySelector(".css-1dbjc4n.r-1kbdv8c.r-18u37iz.r-1wtj0ep.r-1s2bzr4.r-hzcoqn")){ 
         interactionBar = tweet.querySelector(".css-1dbjc4n.r-1kbdv8c.r-18u37iz.r-1wtj0ep.r-1s2bzr4.r-hzcoqn") //if tweet is unfocused
     } else { //if tweet is focused (if it isn't a tweet function will not return anything)
-        interactionBar = tweet.querySelector(".css-1dbjc4n.r-1oszu61.r-1igl3o0.r-rull8r.r-qklmqi.r-2sztyj.r-1efd50x.r-5kkj8d.r-1kbdv8c.r-18u37iz.r-h3s6tt.r-1wtj0ep.r-3qxfft.r-s1qlax")
+        interactionBar = tweet.querySelector(".css-1dbjc4n.r-1oszu61.r-2sztyj.r-1efd50x.r-5kkj8d.r-1kbdv8c.r-18u37iz.r-h3s6tt.r-1wtj0ep.r-3qxfft.r-s1qlax")
     }
     if(interactionBar){
         return Array.from(interactionBar.children).slice(0, 3)
